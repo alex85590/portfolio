@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="fr">
+<!--
+╔════════════════════════════════════════════════════════════════════════════════╗
+║                                                                                ║
+║                    👨‍💻 Portfolio d'Alexandre Srey 👨‍💻                           ║
+║                         Développeur Web Full-Stack                             ║
+║                                                                                ║
+║                                                                                ║
+║                  ___________________________________________                   ║
+║                 |  ___________________________________  |                      ║
+║                 | |                                   | |                      ║
+║                 | |  > npm run dev                    | |                      ║
+║                 | |  > Compiling...                   | |                      ║
+║                 | |  ✓ Compiled successfully!         | |                      ║
+║                 | |                                   | |                      ║
+║                 | |  function createAwesomeWebsite(){ | |                      ║
+║                 | |    const passion = '💜';          | |                      ║
+║                 | |    const skills = ['PHP', 'JS']; | |                      ║
+║                 | |    return passion + skills;       | |                      ║
+║                 | |  }                                | |                      ║
+║                 | |                                   | |                      ║
+║                 | |___________________________________| |                      ║
+║                 |_______________________________________|                      ║
+║                      \_______________________________/                         ║
+║                   ___________      ___________                                 ║
+║                  |           |    |           |                                ║
+║                  |  ⌨️        |    |   🖱️      |                                ║
+║                  |___________|    |___________|                                ║
+║                                                                                ║
+║                              ☕                                                ║
+║                             (  )                                               ║
+║                            (    )                                              ║
+║                           (______)                                             ║
+║                            |    |                                              ║
+║                            |____|                                              ║
+║                                                                                ║
+║                    💡 "Code is poetry" 💡                                      ║
+║                                                                                ║
+║                                                                                ║
+║    📧 alexandresrey87@gmail.com                                                ║
+║    📱 06.85.57.86.18                                                           ║
+║    📍 Saint-Malo-Du-Bois (85)                                                  ║
+║    🔗 https://alex85590.github.io/portfolio/                                   ║
+║                                                                                ║
+║    ⭐ Spécialisations:                                                         ║
+║       • PHP (POO) & Laravel                                                    ║
+║       • JavaScript & Frameworks modernes                                       ║
+║       • WordPress & PrestaShop                                                 ║
+║       • Optimisation SEO & Performances                                        ║
+║       • Synchronisation ERP & APIs REST                                        ║
+║                                                                                ║
+║    💼 Actuellement: Développeur Web chez Amiaud                                ║
+║    🚀 Statut: Disponible pour de nouveaux projets                             ║
+║                                                                                ║
+║    ════════════════════════════════════════════════════════════                ║
+║                                                                                ║
+║    👀 Hey ! Tu regardes le code source ? Bravo ! 🎉                            ║
+║                                                                                ║
+║    Tu es développeur.se toi aussi ? N'hésite pas à me contacter !             ║
+║    J'adore échanger avec d'autres passionnés de code 🤝                        ║
+║                                                                                ║
+║    PS: Si tu trouves un bug, fais-moi signe 😉                                 ║
+║                                                                                ║
+║    © 2025 - Conçu et développé avec ❤️ par Alexandre Srey                     ║
+║    Tous droits réservés - Code source protégé                                 ║
+║                                                                                ║
+╚════════════════════════════════════════════════════════════════════════════════╝
+
+
+    ⚠️  AVERTISSEMENT DE COPYRIGHT ⚠️
+    
+    Ce code est la propriété intellectuelle d'Alexandre Srey.
+    Toute reproduction, distribution ou utilisation non autorisée
+    de ce code est strictement interdite et peut faire l'objet
+    de poursuites judiciaires conformément au Code de la 
+    Propriété Intellectuelle.
+    
+    Si vous souhaitez utiliser ou vous inspirer de ce code,
+    merci de me contacter : alexandresrey87@gmail.com
+    
+    Merci de respecter le travail des développeurs ! 🙏
+
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexandre Srey - Développeur Web</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="bg-animation"></div>
+    <div class="progress-bar"></div>
+
+    <!-- Header -->
+    <header>
+        <div class="hero-grid"></div>
+        <div class="hero-content">
+            <div class="hero-badge">✨ Disponible pour de nouveaux projets</div>
+            <h1>Alexandre Srey</h1>
+            <p class="tagline">Développeur Web Full-Stack</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn">💬 Me contacter</a>
+                <a href="img/alexandre-srey.pdf" download class="btn btn-outline" target="_blank">📥 Télécharger mon CV</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <svg width="30" height="50" viewBox="0 0 30 50">
+                <rect x="5" y="5" width="20" height="40" rx="10" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="2"/>
+                <circle cx="15" cy="15" r="3" fill="rgba(255,255,255,0.8)">
+                    <animate attributeName="cy" from="15" to="35" dur="1.5s" repeatCount="indefinite"/>
+                    <animate attributeName="opacity" from="1" to="0" dur="1.5s" repeatCount="indefinite"/>
+                </circle>
+            </svg>
+        </div>
+    </header>
+
+    <!-- Contact Bar -->
+    <div class="contact-bar">
+        <div class="container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    📍 Saint-Malo-Du-Bois (85)
+                </div>
+                <div class="contact-item">
+                    📧 alexandresrey87@gmail.com
+                </div>
+                <div class="contact-item">
+                    📱 06.85.57.86.18
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <!-- About Section -->
+        <section id="about">
+            <div class="container">
+                <h2>À propos de moi</h2>
+                <p class="section-subtitle">Passionné par la création de solutions web performantes et innovantes</p>
+                
+                <div class="about-grid">
+                    <div class="about-image">
+                        <div class="about-placeholder"><img class="img-about" src="./img/Alexandre-srey.jpeg"></div>
+                    </div>
+                    <div class="about-text">
+                        <p>Développeur web avec <strong>plus de 7 ans d'expérience</strong> dans le développement d'applications web et la création de solutions sur mesure.</p>
+                        
+                        <p>Spécialisé en <strong>PHP orienté objet</strong>, <strong>JavaScript</strong> et dans l'écosystème <strong>WordPress/PrestaShop</strong>, je mets un point d'honneur à livrer des solutions techniques robustes et évolutives.</p>
+                        
+                        <p>Expert en <strong>optimisation de performances web</strong>, <strong>SEO</strong> et <strong>synchronisation de données</strong>, j'adopte une approche agile et collaborative pour chaque projet.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <div class="container">
+                <h2>Compétences</h2>
+                <p class="section-subtitle">Un ensemble de technologies acquises à travers de mon experience</p>
+                
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <span class="skill-icon">🚀</span>
+                        <h3>Langages, Frameworks & Cms</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">PHP (POO)</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">HTML/CSS</span>
+                            <span class="skill-tag">Laravel</span>
+                            <span class="skill-tag">Ionic</span>
+                            <span class="skill-tag">WordPress</span>
+                            <span class="skill-tag">PrestaShop</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <span class="skill-icon">🛠️</span>
+                        <h3>Outils</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">Ligne de commande</span>
+                            <span class="skill-tag">Cron</span>
+                             <span class="skill-tag">Méthode Agile</span>
+                             <span class="skill-tag">Esprit d'équipe</span>
+                            <span class="skill-tag">Autoformation</span>
+                            <span class="skill-tag">Gestion de projet</span>
+                            <span class="skill-tag">Documentation</span>
+                        </div>
+                    </div>
+
+                   <!-- <div class="skill-card">
+                        <span class="skill-icon">⚡</span>
+                        <h3>Spécialités</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Optimisation SEO</span>
+                            <span class="skill-tag">Performances Web</span>
+                            <span class="skill-tag">Synchronisation ERP</span>
+                            <span class="skill-tag">Gestion Serveur</span>
+                            <span class="skill-tag">API REST</span>
+                        </div>
+                    </div> -->
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience">
+            <div class="container">
+                <h2>Parcours Professionnel</h2>    
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                           <h3>Développeur Web Indépendant</h3>
+                            <div class="company">Saint-Malo-Du-Bois</div>
+                            <div class="date">2018 - 2024</div>
+                            <ul>
+                                <li>Réalisation de développements personnalisés</li>
+                                <li>Création de sites internet sur mesure</li>
+                                <li>Gestion de projets web de A à Z</li>
+                                <li>Conseil et accompagnement clients</li>
+                                <li>Maintenance et évolution de sites existants</li>
+                            </ul>
+                        </div>
+                        <div class="timeline-dot"></div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                              <h3>Développeur Web</h3>
+                            <div class="company">Amiaud - Saint-Martin-Des-Noyers</div>
+                            <div class="date">2024 - 2025</div>
+                            <ul>
+                                <li>Création et optimisation de liens ERP - Site internet</li>
+                                <li>Évolutions techniques suivant les demandes clients</li>
+                                <li>Création de sites web (WordPress/PrestaShop/Laravel)</li>
+                                <li>Scripts PHP pour synchronisation de données via cron</li>
+                                <li>Optimisation SEO et performances web</li>
+                                <li>Réalisation de documentations techniques</li>
+                                <li>Gestion et maintenance serveur web</li>
+                                <li>Gestion de projet</li>
+                            </ul>
+                        </div>
+                        <div class="timeline-dot"></div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>Développeur Web</h3>
+                            <div class="company">My Personal Business - La Roche Sur Yon</div>
+                            <div class="date">2017 - 2018</div>
+                            <ul>
+                                <li>Participation au développement de l'application mobile (Ionic)</li>
+                                <li>Développement d'interfaces utilisateur</li>
+                                <li>Intégration d'APIs</li>
+                                <li>Tests et débogage</li>
+                            </ul>
+                        </div>
+                        <div class="timeline-dot"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Réalisations - À ajouter dans votre index.html -->
+<section id="realisations" class="realisations-section">
+    <div class="realisations-container">
+        <div class="realisations-header">
+            <h2>Mes Réalisations</h2>
+            <p>Quelques projets qui illustrent mon expertise</p>
+        </div>
+
+        <div class="realisations-grid">
+            <!-- Projet 1 : Synchronisation ERP-- e-commerce -->
+            <div class="realisation-card">
+                <div class="realisation-image realisation-image-erp siteap"></div>
+                <div class="realisation-content">
+                    <h3 class="realisation-title">Liaison erp-e-commerce</h3>
+                    <span class="realisation-type">Développement Fullstack</span>
+                    <p class="realisation-description">
+                        Création d'un module de système de synchronisation automatique entre un ERP et SITE e-commerce. Amélioration de thème, performances et Seo. Développement de nouvelles fonctionnalités
+                    </p>
+                    <div class="realisation-technologies">
+                        <span class="realisation-tech-tag">PHP</span>
+                        <span class="realisation-tech-tag">Création de modules</span>
+                        <span class="realisation-tech-tag">Modification de thème</span>
+                        <span class="realisation-tech-tag">Prestashop 1.7</span>
+                        <span class="realisation-tech-tag">Cron</span>
+                        <span class="realisation-tech-tag">MySQL</span>
+                    </div>
+                    <a href="https://www.amiaud-peche.fr/" class="realisation-link">
+                        Confidentiel
+                    </a>
+                </div>
+            </div>
+
+              <!-- Projet 4 : sitevi -->
+            <div class="realisation-card">
+                <div class="realisation-image sitevi"></div>
+                <div class="realisation-content">
+                    <h3 class="realisation-title">Création d'un site internet</h3>
+                    <span class="realisation-type">Développement fullstack</span>
+                    <p class="realisation-description">
+                        Réalisation d'un site internet pour une agence immobilière. Ajout de fonctionnalités dans le backoffice. Améliorations performances et seo
+                    </p>
+                    <div class="realisation-technologies">
+                        <span class="realisation-tech-tag">Wordpress</span>
+                        <span class="realisation-tech-tag">PHP</span>
+                        <span class="realisation-tech-tag">JavaScript</span>
+                        <span class="realisation-tech-tag">MySQL</span>
+                    </div>
+                    <a href="https://www.vrignaud-immo.com/" class="realisation-link" target="_blank">
+                        Voir le projet
+                    </a>
+                </div>
+            </div>
+
+
+             <!-- Projet  : Site site amiaud-equipement -->
+            <div class="realisation-card">
+                <div class="realisation-image realisation-image-ecommerce siteaq"></div>
+                <div class="realisation-content">
+                    <h3 class="realisation-title">Réalisation Site internet</h3>
+                    <span class="realisation-type">Création de sites</span>
+                    <p class="realisation-description">
+                        Création d'un site Wordpress à partir d'une maquette graphique. Amélioration et performances seo
+                    </p>
+                    <div class="realisation-technologies">
+                        <span class="realisation-tech-tag">WordPress</span>
+                        <span class="realisation-tech-tag">Mysql</span>
+                        <span class="realisation-tech-tag">PHP</span>
+                    </div>
+                    <a href="https://amiaud-equipement.fr/" class="realisation-link" target="_blank">
+                        Voir le projet
+                    </a>
+                </div>
+            </div>
+
+            <!-- Projet 3 : Application Mobile -->
+            <div class="realisation-card">
+                <div class="realisation-image realisation-image-mobile sitempb"></div>
+                <div class="realisation-content">
+                    <h3 class="realisation-title">Application Mobile Ionic</h3>
+                    <span class="realisation-type">Développement Mobile</span>
+                    <p class="realisation-description">
+                        Participation au développement d'une application mobile pour la gestion de business.
+                    </p>
+                    <div class="realisation-technologies">
+                        <span class="realisation-tech-tag">Ionic</span>
+                        <span class="realisation-tech-tag">Angular</span>
+                        <span class="realisation-tech-tag">Mongodb</span>
+                        <span class="realisation-tech-tag">Liaison Api</span>
+                    </div>
+                    <a href="#" class="realisation-link" target="_blank">
+                        Confidentiel
+                    </a>
+                </div>
+            </div>
+
+             <!-- Projet 2 : Site E-commerce WordPress -->
+            <div class="realisation-card">
+                <div class="realisation-image realisation-image-ecommerce sitelpn"></div>
+                <div class="realisation-content">
+                    <h3 class="realisation-title">Réalisation Site internet</h3>
+                    <span class="realisation-type">Création de sites</span>
+                    <p class="realisation-description">
+                        Création d'un site Wordpress pour une naturopathe, Optimisation SEO.
+                    </p>
+                    <div class="realisation-technologies">
+                        <span class="realisation-tech-tag">WordPress</span>
+                        <span class="realisation-tech-tag">Mysql</span>
+                        <span class="realisation-tech-tag">PHP</span>
+                    </div>
+                    <a href="https://louisepasquier-naturopathe.fr" class="realisation-link" target="_blank">
+                        Voir le projet →
+                    </a>
+                </div>
+            </div>
+
+            <!-- Projet 5 : Site Wordpress -->
+            <div class="realisation-card">
+                <div class="realisation-image realisation-image-seo siteddlm"></div>
+                <div class="realisation-content">
+                    <h3 class="realisation-title">Réalisation site internet</h3>
+                    <span class="realisation-type">Création de sites</span>
+                    <p class="realisation-description">
+                      Réalisation d'un site wordpress pour un site de chambre d'hôtes
+                    </p>
+                    <div class="realisation-technologies">
+                        <span class="realisation-tech-tag">WordPress</span>
+                        <span class="realisation-tech-tag">Mysql</span>
+                        <span class="realisation-tech-tag">PHP</span>
+                    </div>
+                    <a href="https://domaine-de-la-menie.fr/" class="realisation-link" target="_blank">
+                        Voir le projet
+                    </a>
+                </div>
+            </div>
+
+                 <!-- Projet  : Site Wordpress colformation-->
+            <div class="realisation-card">
+                <div class="realisation-image realisation-image-seo sitecf"></div>
+                <div class="realisation-content">
+                    <h3 class="realisation-title">Réalisation site internet</h3>
+                    <span class="realisation-type">Création de sites</span>
+                    <p class="realisation-description">
+                      Réalisation d'un site wordpress pour une entreprise de courtage en formation.
+                    </p>
+                    <div class="realisation-technologies">
+                        <span class="realisation-tech-tag">WordPress</span>
+                        <span class="realisation-tech-tag">Mysql</span>
+                        <span class="realisation-tech-tag">PHP</span>
+                    </div>
+                    <a href="https://collectif-formation.fr/" class="realisation-link" target="_blank">
+                        Voir le projet
+                    </a>
+                </div>
+            </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="container">
+                <h2>Travaillons Ensemble</h2>
+                <p class="section-subtitle">Je suis disponible pour de nouvelles opportunités et collaborations</p>
+                
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <div class="contact-card-icon">📧</div>
+                        <h3>Email</h3>
+                        <a href="mailto:alexandresrey87@gmail.com">alexandresrey87@gmail.com</a>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-card-icon">📱</div>
+                        <h3>Téléphone</h3>
+                        <a href="tel:0685578618">06.85.57.86.18</a>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-card-icon">📍</div>
+                        <h3>Localisation</h3>
+                        <p>Saint-Malo-Du-Bois<br>Vendée (85)</p>
+                    </div>
+                </div>
+
+                <div class="cta-buttons">
+                    <a href="mailto:alexandresrey87@gmail.com" class="btn">📧 Envoyer un message</a>
+                    <a href="img/alexandre-srey.pdf" download class="btn btn-outline" target="_blank">📥 Télécharger mon CV</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Alexandre Srey - Développeur Web Full-Stack</p>
+            <p style="margin-top: 10px; opacity: 0.7;">Passionné par le sport et les voyages 🏃‍♂️ ✈️</p>
+            <p style="margin-top: 20px; font-size: 0.9em;">Conçu et développé avec ❤️</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Scroll progress bar
+        window.addEventListener('scroll', () => {
+            const scrollProgress = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+            document.querySelector('.progress-bar').style.transform = `scaleX(${scrollProgress / 100})`;
+        });
+
+        // Timeline animation on scroll
+        const observerOptions = {
+            threshold: 0.2,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.timeline-item').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Skill cards animation
+        const skillObserver = new IntersectionObserver(function(entries) {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }, index * 100);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.skill-card').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'all 0.6s ease';
+            skillObserver.observe(el);
+        });
+
+        // Parallax effect on hero
+        window.addEventListener('scroll', () => {
+            const scrolled = window.scrollY;
+            const header = document.querySelector('header');
+            if (header && scrolled < window.innerHeight) {
+                header.style.transform = `translateY(${scrolled * 0.5}px)`;
+                header.style.opacity = 1 - (scrolled / window.innerHeight);
+            }
+        });
+
+        // Add hover effect on stats
+        document.querySelectorAll('.stat-item').forEach(stat => {
+            stat.addEventListener('mouseenter', function() {
+                this.style.transform = 'scale(1.05) translateY(-5px)';
+                this.style.transition = 'all 0.3s ease';
+            });
+            
+            stat.addEventListener('mouseleave', function() {
+                this.style.transform = 'scale(1) translateY(0)';
+            });
+        });
+    </script>
+</body>
+</html>
